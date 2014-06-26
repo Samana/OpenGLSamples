@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup Label="ProjectConfigurations">
+		<ProjectConfiguration Include="debug|Win32">
+			<Configuration>debug</Configuration>
+			<Platform>Win32</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="release|Win32">
+			<Configuration>release</Configuration>
+			<Platform>Win32</Platform>
+		</ProjectConfiguration>
+	</ItemGroup>
+	<PropertyGroup Label="Globals">
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|Win32'" Label="Configuration">
+		<ConfigurationType>Application</ConfigurationType>
+		<GenerateManifest>false</GenerateManifest>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|Win32'" Label="Configuration">
+		<ConfigurationType>Application</ConfigurationType>
+		<GenerateManifest>false</GenerateManifest>
+		<WholeProgramOptimization>true</WholeProgramOptimization>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+	<ImportGroup Label="ExtensionSettings">
+	</ImportGroup>
+	<ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+	</ImportGroup>
+	<ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='release|Win32'">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+	</ImportGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">
+		<OutDir>./../../bin/vs2010x86\</OutDir>
+		<IntDir>./../../intermediate/ComputeWaterSimulation/vs2010x86/debug</IntDir>
+		<TargetExt>.exe</TargetExt>
+		<TargetName>ComputeWaterSimulationD</TargetName>
+		<CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+		<CodeAnalysisRules />
+		<CodeAnalysisRuleAssemblies />
+	</PropertyGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">
+		<ClCompile>
+			<TreatWarningAsError>true</TreatWarningAsError>
+			<CallingConvention>Cdecl</CallingConvention>
+			<IntrinsicFunctions>true</IntrinsicFunctions>
+			<SuppressStartupBanner>true</SuppressStartupBanner>
+			<FloatingPointModel>Fast</FloatingPointModel>
+			<AdditionalOptions>/Oy- /Gm- /EHsc /wd4995 /wd4390 /wd4100 /wd4201 /wd4996</AdditionalOptions>
+			<Optimization>Disabled</Optimization>
+			<AdditionalIncludeDirectories>./../../ComputeWaterSimulation;./../../../extensions/include;./../../../extensions/externals/include;./../../../extensions/externals/include/GLFW;./../../ComputeWaterSimulation/assets/shaders;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<PreprocessorDefinitions>WIN32;_WIN32;_DEBUG;PROFILE;_ITERATOR_DEBUG_LEVEL=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<WarningLevel>Level4</WarningLevel>
+			<RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+			<PrecompiledHeader>NotUsing</PrecompiledHeader>
+			<PrecompiledHeaderFile></PrecompiledHeaderFile>
+			<DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+		</ClCompile>
+		<Link>
+			<AdditionalOptions>/DEBUG /MACHINE:x86 /LARGEADDRESSAWARE /NOLOGO /OPT:REF /OPT:ICF /INCREMENTAL:NO</AdditionalOptions>
+			<AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;glfw3.lib;opengl32.lib;glew32s.lib;xinput.lib;%(AdditionalDependencies)</AdditionalDependencies>
+			<OutputFile>$(OutDir)ComputeWaterSimulationD.exe</OutputFile>
+			<AdditionalLibraryDirectories>./../../../extensions/externals/lib/vs2010x86;./../../../extensions/lib/vs2010x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+			<ProgramDatabaseFile>$(OutDir)/ComputeWaterSimulationD.exe.pdb</ProgramDatabaseFile>
+			<SubSystem>Windows</SubSystem>
+			<ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+			<TargetMachine>MachineX86</TargetMachine>
+		</Link>
+		<ResourceCompile>
+		</ResourceCompile>
+		<ProjectReference>
+		</ProjectReference>
+	</ItemDefinitionGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|Win32'">
+		<OutDir>./../../bin/vs2010x86\</OutDir>
+		<IntDir>./../../intermediate/ComputeWaterSimulation/vs2010x86/release</IntDir>
+		<TargetExt>.exe</TargetExt>
+		<TargetName>ComputeWaterSimulation</TargetName>
+		<CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+		<CodeAnalysisRules />
+		<CodeAnalysisRuleAssemblies />
+	</PropertyGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release|Win32'">
+		<ClCompile>
+			<TreatWarningAsError>true</TreatWarningAsError>
+			<EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+			<IntrinsicFunctions>true</IntrinsicFunctions>
+			<FunctionLevelLinking>true</FunctionLevelLinking>
+			<SuppressStartupBanner>true</SuppressStartupBanner>
+			<FloatingPointModel>Fast</FloatingPointModel>
+			<AdditionalOptions>/Oy- /Gm- /EHsc /wd4995 /wd4390 /wd4100 /wd4201 /wd4996</AdditionalOptions>
+			<Optimization>MaxSpeed</Optimization>
+			<AdditionalIncludeDirectories>./../../ComputeWaterSimulation;./../../../extensions/include;./../../../extensions/externals/include;./../../../extensions/externals/include/GLFW;./../../ComputeWaterSimulation/assets/shaders;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<PreprocessorDefinitions>WIN32;_WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<WarningLevel>Level4</WarningLevel>
+			<RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+			<PrecompiledHeader>NotUsing</PrecompiledHeader>
+			<PrecompiledHeaderFile></PrecompiledHeaderFile>
+			<DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+		</ClCompile>
+		<Link>
+			<AdditionalOptions>/DEBUG /MACHINE:x86 /LARGEADDRESSAWARE /NOLOGO /OPT:REF /OPT:ICF /INCREMENTAL:NO</AdditionalOptions>
+			<AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;glfw3.lib;opengl32.lib;glew32s.lib;xinput.lib;%(AdditionalDependencies)</AdditionalDependencies>
+			<OutputFile>$(OutDir)ComputeWaterSimulation.exe</OutputFile>
+			<AdditionalLibraryDirectories>./../../../extensions/externals/lib/vs2010x86;./../../../extensions/lib/vs2010x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+			<ProgramDatabaseFile>$(OutDir)/ComputeWaterSimulation.exe.pdb</ProgramDatabaseFile>
+			<SubSystem>Windows</SubSystem>
+			<ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+			<TargetMachine>MachineX86</TargetMachine>
+		</Link>
+		<ResourceCompile>
+		</ResourceCompile>
+		<ProjectReference>
+		</ProjectReference>
+	</ItemDefinitionGroup>
+	<ItemGroup>
+		<ClCompile Include="..\..\ComputeWaterSimulation\ComputeWaterSimulation.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\ComputeWaterSimulation\Wave.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\ComputeWaterSimulation\WaveSim.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\ComputeWaterSimulation\WaveSimRenderer.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\ComputeWaterSimulation\WaveSimThread.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\ComputeWaterSimulation\noise.cpp">
+		</ClCompile>
+		<ClInclude Include="..\..\ComputeWaterSimulation\Array2D.h">
+		</ClInclude>
+		<ClInclude Include="..\..\ComputeWaterSimulation\ComputeWaterSimulation.h">
+		</ClInclude>
+		<ClInclude Include="..\..\ComputeWaterSimulation\Wave.h">
+		</ClInclude>
+		<ClInclude Include="..\..\ComputeWaterSimulation\WaveSim.h">
+		</ClInclude>
+		<ClInclude Include="..\..\ComputeWaterSimulation\WaveSimRenderer.h">
+		</ClInclude>
+		<ClInclude Include="..\..\ComputeWaterSimulation\WaveSimThread.h">
+		</ClInclude>
+		<ClInclude Include="..\..\ComputeWaterSimulation\noise.h">
+		</ClInclude>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="./../../../extensions/externals/build/vs2010win32/Half.vcxproj">
+			<ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="./../../../extensions/build/vs2010win32/NvAppBase.vcxproj">
+			<ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="./../../../extensions/build/vs2010win32/NvAssetLoader.vcxproj">
+			<ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="./../../../extensions/build/vs2010win32/NvGamepad.vcxproj">
+			<ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="./../../../extensions/build/vs2010win32/NvGLUtils.vcxproj">
+			<ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="./../../../extensions/build/vs2010win32/NvModel.vcxproj">
+			<ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="./../../../extensions/build/vs2010win32/NvUI.vcxproj">
+			<ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="./../../../extensions/externals/build/vs2010win32/R3.vcxproj">
+			<ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+		</ProjectReference>
+	</ItemGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+	<ImportGroup Label="ExtensionTargets"></ImportGroup>
+</Project>

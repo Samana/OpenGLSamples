@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<Filter Include="src"><!--  -->
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="..\..\TextureArrayTerrain\TerrainGenerator.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\TextureArrayTerrain\TerrainSim.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\TextureArrayTerrain\TerrainSimRenderer.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\TextureArrayTerrain\TerrainSimThread.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\TextureArrayTerrain\TextureArrayTerrain.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClInclude Include="..\..\TextureArrayTerrain\Array2D.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\TextureArrayTerrain\IBOBuild.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\TextureArrayTerrain\RidgedMultiFractal.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\TextureArrayTerrain\TerrainGenerator.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\TextureArrayTerrain\TerrainSim.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\TextureArrayTerrain\TerrainSimRenderer.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\TextureArrayTerrain\TerrainSimThread.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\TextureArrayTerrain\TextureArrayTerrain.h">
+			<Filter>src</Filter>
+		</ClInclude>
+	</ItemGroup>
+</Project>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<Filter Include="src"><!--  -->
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="..\..\FeedbackParticlesApp\FeedbackParticlesApp.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\FeedbackParticlesApp\FeedbackParticlesScene.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\FeedbackParticlesApp\ParticleSystem.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\FeedbackParticlesApp\TextureUtils.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\FeedbackParticlesApp\Utils.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClInclude Include="..\..\FeedbackParticlesApp\FeedbackParticlesApp.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\FeedbackParticlesApp\FeedbackParticlesScene.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\FeedbackParticlesApp\ParticleSystem.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\FeedbackParticlesApp\TextureUtils.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\FeedbackParticlesApp\Utils.h">
+			<Filter>src</Filter>
+		</ClInclude>
+	</ItemGroup>
+</Project>

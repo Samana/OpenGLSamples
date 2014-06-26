@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<Filter Include="src"><!--  -->
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="..\..\src\NvModel\NvGLModel.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\NvModel\NvModel.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\NvModel\NvModelObj.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\NvModel\NvModelQuery.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\NvModel\NvShapes.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+	</ItemGroup>
+	<ItemGroup>
+		<Filter Include="include"><!--  -->
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClInclude Include="..\..\include\NvModel\NvGLModel.h">
+			<Filter>include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\include\NvModel\NvModel.h">
+			<Filter>include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\include\NvModel\NvShapes.h">
+			<Filter>include</Filter>
+		</ClInclude>
+	</ItemGroup>
+</Project>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<Filter Include="src"><!--  -->
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="..\..\BindlessApp\BindlessApp.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\BindlessApp\Mesh.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClInclude Include="..\..\BindlessApp\BindlessApp.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\BindlessApp\Mesh.h">
+			<Filter>src</Filter>
+		</ClInclude>
+	</ItemGroup>
+</Project>

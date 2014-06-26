@@ -1,0 +1,72 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NvAppBase", "./NvAppBase.vcxproj", "{60297368-F210-EA05-B340-1AD0378699C0}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NvAssetLoader", "./NvAssetLoader.vcxproj", "{1B5408AA-2438-9EB8-3B21-BE348ED0342F}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NvEGLUtil", "./NvEGLUtil.vcxproj", "{3A25E336-94DA-75F3-3E60-A41607AAA292}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NvGamepad", "./NvGamepad.vcxproj", "{73279F07-814F-2BC7-CFE2-7DF22495D16F}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NvGLUtils", "./NvGLUtils.vcxproj", "{6826558F-978C-CDA1-5590-D03D58753020}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NvModel", "./NvModel.vcxproj", "{B5177C03-F4A3-541C-CDD0-EE298FE4BEB4}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NvUI", "./NvUI.vcxproj", "{6209A624-5FFC-9522-7DA2-92D490A26B6C}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		debug|Tegra-Android = debug|Tegra-Android
+		release|Tegra-Android = release|Tegra-Android
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{60297368-F210-EA05-B340-1AD0378699C0}.debug|Tegra-Android.ActiveCfg = debug|Tegra-Android
+		{60297368-F210-EA05-B340-1AD0378699C0}.debug|Tegra-Android.Build.0 = debug|Tegra-Android
+		{60297368-F210-EA05-B340-1AD0378699C0}.release|Tegra-Android.ActiveCfg = release|Tegra-Android
+		{60297368-F210-EA05-B340-1AD0378699C0}.release|Tegra-Android.Build.0 = release|Tegra-Android
+		{1B5408AA-2438-9EB8-3B21-BE348ED0342F}.debug|Tegra-Android.ActiveCfg = debug|Tegra-Android
+		{1B5408AA-2438-9EB8-3B21-BE348ED0342F}.debug|Tegra-Android.Build.0 = debug|Tegra-Android
+		{1B5408AA-2438-9EB8-3B21-BE348ED0342F}.release|Tegra-Android.ActiveCfg = release|Tegra-Android
+		{1B5408AA-2438-9EB8-3B21-BE348ED0342F}.release|Tegra-Android.Build.0 = release|Tegra-Android
+		{3A25E336-94DA-75F3-3E60-A41607AAA292}.debug|Tegra-Android.ActiveCfg = debug|Tegra-Android
+		{3A25E336-94DA-75F3-3E60-A41607AAA292}.debug|Tegra-Android.Build.0 = debug|Tegra-Android
+		{3A25E336-94DA-75F3-3E60-A41607AAA292}.release|Tegra-Android.ActiveCfg = release|Tegra-Android
+		{3A25E336-94DA-75F3-3E60-A41607AAA292}.release|Tegra-Android.Build.0 = release|Tegra-Android
+		{73279F07-814F-2BC7-CFE2-7DF22495D16F}.debug|Tegra-Android.ActiveCfg = debug|Tegra-Android
+		{73279F07-814F-2BC7-CFE2-7DF22495D16F}.debug|Tegra-Android.Build.0 = debug|Tegra-Android
+		{73279F07-814F-2BC7-CFE2-7DF22495D16F}.release|Tegra-Android.ActiveCfg = release|Tegra-Android
+		{73279F07-814F-2BC7-CFE2-7DF22495D16F}.release|Tegra-Android.Build.0 = release|Tegra-Android
+		{6826558F-978C-CDA1-5590-D03D58753020}.debug|Tegra-Android.ActiveCfg = debug|Tegra-Android
+		{6826558F-978C-CDA1-5590-D03D58753020}.debug|Tegra-Android.Build.0 = debug|Tegra-Android
+		{6826558F-978C-CDA1-5590-D03D58753020}.release|Tegra-Android.ActiveCfg = release|Tegra-Android
+		{6826558F-978C-CDA1-5590-D03D58753020}.release|Tegra-Android.Build.0 = release|Tegra-Android
+		{B5177C03-F4A3-541C-CDD0-EE298FE4BEB4}.debug|Tegra-Android.ActiveCfg = debug|Tegra-Android
+		{B5177C03-F4A3-541C-CDD0-EE298FE4BEB4}.debug|Tegra-Android.Build.0 = debug|Tegra-Android
+		{B5177C03-F4A3-541C-CDD0-EE298FE4BEB4}.release|Tegra-Android.ActiveCfg = release|Tegra-Android
+		{B5177C03-F4A3-541C-CDD0-EE298FE4BEB4}.release|Tegra-Android.Build.0 = release|Tegra-Android
+		{6209A624-5FFC-9522-7DA2-92D490A26B6C}.debug|Tegra-Android.ActiveCfg = debug|Tegra-Android
+		{6209A624-5FFC-9522-7DA2-92D490A26B6C}.debug|Tegra-Android.Build.0 = debug|Tegra-Android
+		{6209A624-5FFC-9522-7DA2-92D490A26B6C}.release|Tegra-Android.ActiveCfg = release|Tegra-Android
+		{6209A624-5FFC-9522-7DA2-92D490A26B6C}.release|Tegra-Android.Build.0 = release|Tegra-Android
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddins) = postSolution
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+	EndGlobalSection
+EndGlobal

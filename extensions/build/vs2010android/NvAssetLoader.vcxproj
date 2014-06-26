@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<NsightTegraProjectRevisionNumber Label="NsightTegraProject">6</NsightTegraProjectRevisionNumber>
+		</PropertyGroup>
+	<ItemGroup Label="ProjectConfigurations">
+		<ProjectConfiguration Include="debug|Tegra-Android">
+			<Configuration>debug</Configuration>
+			<Platform>Tegra-Android</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="release|Tegra-Android">
+			<Configuration>release</Configuration>
+			<Platform>Tegra-Android</Platform>
+		</ProjectConfiguration>
+	</ItemGroup>
+	<PropertyGroup Label="Globals">
+		<ProjectGuid>{402BCAA2-D025-49F2-82B0-CF522012BF71}</ProjectGuid>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|Tegra-Android'" Label="Configuration">
+		<ConfigurationType>StaticLibrary</ConfigurationType>
+		<GenerateManifest>false</GenerateManifest>
+		<PlatformToolset>arm-linux-androideabi-4.8</PlatformToolset>
+		<AndroidArch>armv7-a</AndroidArch>
+		<AndroidStlType>gnustl_static</AndroidStlType>
+		<AndroidTargetAPI>android-14</AndroidTargetAPI>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|Tegra-Android'" Label="Configuration">
+		<ConfigurationType>StaticLibrary</ConfigurationType>
+		<GenerateManifest>false</GenerateManifest>
+		<PlatformToolset>arm-linux-androideabi-4.8</PlatformToolset>
+		<AndroidArch>armv7-a</AndroidArch>
+		<AndroidStlType>gnustl_static</AndroidStlType>
+		<AndroidTargetAPI>android-14</AndroidTargetAPI>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+	<ImportGroup Label="ExtensionSettings">
+	</ImportGroup>
+	<ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='debug|Tegra-Android'">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+	</ImportGroup>
+	<ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='release|Tegra-Android'">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+	</ImportGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|Tegra-Android'">
+		<OutDir>$(ProjectDir)./../../lib/Tegra-Android\</OutDir>
+		<IntDir>./../../intermediate/NvAssetLoader/Tegra-Android/debug</IntDir>
+		<TargetExt>.a</TargetExt>
+		<TargetName>libNvAssetLoaderD</TargetName>
+		<CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+		<CodeAnalysisRules />
+		<CodeAnalysisRuleAssemblies />
+	</PropertyGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug|Tegra-Android'">
+		<ClCompile>
+			<FloatingPointModel>Precise</FloatingPointModel>
+			<Optimization>Disabled</Optimization>
+			<AdditionalIncludeDirectories>./../../src;./../../src/NvAssetLoader;./../../include;./../../../../../../../../../../../../../platforms/android-14/arch-arm/usr/include;./../../../../../../../../../../../../../sources/cxx-stl/gnu-libstdc++/include;./../../../../../../../../../../../../../sources/cxx-stl/gnu-libstdc++/libs/armeabi-v7a/include;./../../../../../../../../../../../../../sources/cxx-stl/gnu-libstdc++/include/backward;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<PreprocessorDefinitions>ANDROID;_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<WarningLevel>Level3</WarningLevel>
+			<PrecompiledHeader>NotUsing</PrecompiledHeader>
+			<PrecompiledHeaderFile></PrecompiledHeaderFile>
+		</ClCompile>
+		<Lib>
+			<AdditionalOptions> -Wl,--start-group -lc -lm -lgcc -Wl,--end-group</AdditionalOptions>
+			<OutputFile>$(OutDir)libNvAssetLoaderD.a</OutputFile>
+			<AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+			<ProgramDatabaseFile>$(OutDir)/libNvAssetLoaderD.a.pdb</ProgramDatabaseFile>
+		</Lib>
+		<ResourceCompile>
+		</ResourceCompile>
+		<ProjectReference>
+			<LinkLibraryDependencies>true</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemDefinitionGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|Tegra-Android'">
+		<OutDir>$(ProjectDir)./../../lib/Tegra-Android\</OutDir>
+		<IntDir>./../../intermediate/NvAssetLoader/Tegra-Android/release</IntDir>
+		<TargetExt>.a</TargetExt>
+		<TargetName>libNvAssetLoader</TargetName>
+		<CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+		<CodeAnalysisRules />
+		<CodeAnalysisRuleAssemblies />
+	</PropertyGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release|Tegra-Android'">
+		<ClCompile>
+			<FloatingPointModel>Precise</FloatingPointModel>
+			<Optimization>Disabled</Optimization>
+			<AdditionalIncludeDirectories>./../../src;./../../src/NvAssetLoader;./../../include;./../../../../../../../../../../../../../platforms/android-14/arch-arm/usr/include;./../../../../../../../../../../../../../sources/cxx-stl/gnu-libstdc++/include;./../../../../../../../../../../../../../sources/cxx-stl/gnu-libstdc++/libs/armeabi-v7a/include;./../../../../../../../../../../../../../sources/cxx-stl/gnu-libstdc++/include/backward;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<PreprocessorDefinitions>ANDROID;_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<WarningLevel>Level3</WarningLevel>
+			<PrecompiledHeader>NotUsing</PrecompiledHeader>
+			<PrecompiledHeaderFile></PrecompiledHeaderFile>
+		</ClCompile>
+		<Lib>
+			<AdditionalOptions> -Wl,--start-group -lc -lm -lgcc -Wl,--end-group</AdditionalOptions>
+			<OutputFile>$(OutDir)libNvAssetLoader.a</OutputFile>
+			<AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+			<ProgramDatabaseFile>$(OutDir)/libNvAssetLoader.a.pdb</ProgramDatabaseFile>
+		</Lib>
+		<ResourceCompile>
+		</ResourceCompile>
+		<ProjectReference>
+			<LinkLibraryDependencies>true</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemDefinitionGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|Tegra-Android'">
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|Tegra-Android'">
+	</PropertyGroup>
+	<ItemGroup>
+		<ClCompile Include="..\..\src\NvAssetLoader\NvAssetLoader.cpp">
+		</ClCompile>
+	</ItemGroup>
+	<ItemGroup>
+		<ClInclude Include="..\..\include\NvAssetLoader\NvAssetLoader.h">
+		</ClInclude>
+	</ItemGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+	<ImportGroup Label="ExtensionTargets"></ImportGroup>
+</Project>

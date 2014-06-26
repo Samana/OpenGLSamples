@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<Filter Include="src"><!--  -->
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="..\..\OptimizationApp\IceRevisitedRadix.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\OptimizationApp\OptimizationApp.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\OptimizationApp\ParticleRenderer.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\OptimizationApp\ParticleSystem.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\OptimizationApp\SceneRenderer.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\OptimizationApp\Terrain.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\OptimizationApp\Upsampler.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\OptimizationApp\scene.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\OptimizationApp\utils.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClInclude Include="..\..\OptimizationApp\AppExtensions.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\OptimizationApp\IceRevisitedRadix.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\OptimizationApp\IceTypes.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\OptimizationApp\OptimizationApp.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\OptimizationApp\ParticleRenderer.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\OptimizationApp\ParticleSystem.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\OptimizationApp\SceneFBOs.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\OptimizationApp\SceneInfo.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\OptimizationApp\SceneRenderer.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\OptimizationApp\Shaders.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\OptimizationApp\Terrain.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\OptimizationApp\Upsampler.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\OptimizationApp\scene.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\OptimizationApp\utils.h">
+			<Filter>src</Filter>
+		</ClInclude>
+	</ItemGroup>
+</Project>

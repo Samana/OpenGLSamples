@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<NsightTegraProjectRevisionNumber Label="NsightTegraProject">6</NsightTegraProjectRevisionNumber>
+		</PropertyGroup>
+	<ItemGroup Label="ProjectConfigurations">
+		<ProjectConfiguration Include="debug|Tegra-Android">
+			<Configuration>debug</Configuration>
+			<Platform>Tegra-Android</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="release|Tegra-Android">
+			<Configuration>release</Configuration>
+			<Platform>Tegra-Android</Platform>
+		</ProjectConfiguration>
+	</ItemGroup>
+	<PropertyGroup Label="Globals">
+		<ProjectGuid>{402BCAA2-D025-49F2-82B0-CF522012BF71}</ProjectGuid>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|Tegra-Android'" Label="Configuration">
+		<ConfigurationType>Application</ConfigurationType>
+		<GenerateManifest>false</GenerateManifest>
+		<PlatformToolset>arm-linux-androideabi-4.8</PlatformToolset>
+		<AndroidArch>armv7-a</AndroidArch>
+		<AndroidStlType>gnustl_static</AndroidStlType>
+		<AndroidTargetAPI>android-14</AndroidTargetAPI>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|Tegra-Android'" Label="Configuration">
+		<ConfigurationType>Application</ConfigurationType>
+		<GenerateManifest>false</GenerateManifest>
+		<PlatformToolset>arm-linux-androideabi-4.8</PlatformToolset>
+		<AndroidArch>armv7-a</AndroidArch>
+		<AndroidStlType>gnustl_static</AndroidStlType>
+		<AndroidTargetAPI>android-14</AndroidTargetAPI>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+	<ImportGroup Label="ExtensionSettings">
+	</ImportGroup>
+	<ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='debug|Tegra-Android'">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+	</ImportGroup>
+	<ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='release|Tegra-Android'">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+	</ImportGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|Tegra-Android'">
+		<OutDir>$(ProjectDir)./../../bin/Tegra-Android\</OutDir>
+		<IntDir>./../../intermediate/SoftShadows/Tegra-Android/debug</IntDir>
+		<TargetExt>.so</TargetExt>
+		<TargetName>libSoftShadows</TargetName>
+		<CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+		<CodeAnalysisRules />
+		<CodeAnalysisRuleAssemblies />
+	</PropertyGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug|Tegra-Android'">
+		<ClCompile>
+			<FloatingPointModel>Precise</FloatingPointModel>
+			<Optimization>Disabled</Optimization>
+			<AdditionalIncludeDirectories>./../../SoftShadows;./../../../extensions/include;./../../../extensions/externals/include;./../../../../../../../../../../../../../platforms/android-14/arch-arm/usr/include;./../../../../../../../../../../../../../sources/cxx-stl/gnu-libstdc++/include;./../../../../../../../../../../../../../sources/cxx-stl/gnu-libstdc++/libs/armeabi-v7a/include;./../../../../../../../../../../../../../sources/cxx-stl/gnu-libstdc++/include/backward;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<PreprocessorDefinitions>android;ANDROID;USE_REGAL=1;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<WarningLevel>Level3</WarningLevel>
+			<PrecompiledHeader>NotUsing</PrecompiledHeader>
+			<PrecompiledHeaderFile></PrecompiledHeaderFile>
+		</ClCompile>
+		<Link>
+			<AdditionalOptions> -Wl,--start-group -lc -lm -lgcc -lgnustl_static -lEGL -lGLESv2 -landroid -lm -lsupc++ -lgcc -lRegalW_static -Wl,--end-group</AdditionalOptions>
+			<OutputFile>$(OutDir)libSoftShadows.so</OutputFile>
+			<AdditionalLibraryDirectories>./../../../extensions/externals/lib/Tegra-Android;./../../../extensions/lib/Tegra-Android;./../../../../../../../../../../../../../sources/cxx-stl/gnu-libstdc++/libs/armeabi-v7a;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+			<ProgramDatabaseFile>$(OutDir)/libSoftShadows.so.pdb</ProgramDatabaseFile>
+			<SubSystem>Windows</SubSystem>
+			<ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+		</Link>
+		<AntBuild>
+			<AntBuildPath>$(ProjectDir)./../../SoftShadows</AntBuildPath>
+			<JavaSourceDir>src/../../../extensions/src/NvAppBase/java;src</JavaSourceDir>
+			<AntBuildType>Debug</AntBuildType>
+			<AntLibraryName>$(TargetName)</AntLibraryName>
+		</AntBuild>
+		<ResourceCompile>
+		</ResourceCompile>
+		<ProjectReference>
+			<UseLibraryDependencyInputs>true</UseLibraryDependencyInputs>
+		</ProjectReference>
+	</ItemDefinitionGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|Tegra-Android'">
+		<OutDir>$(ProjectDir)./../../bin/Tegra-Android\</OutDir>
+		<IntDir>./../../intermediate/SoftShadows/Tegra-Android/release</IntDir>
+		<TargetExt>.so</TargetExt>
+		<TargetName>libSoftShadows</TargetName>
+		<CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+		<CodeAnalysisRules />
+		<CodeAnalysisRuleAssemblies />
+	</PropertyGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release|Tegra-Android'">
+		<ClCompile>
+			<FloatingPointModel>Precise</FloatingPointModel>
+			<Optimization>Disabled</Optimization>
+			<AdditionalIncludeDirectories>./../../SoftShadows;./../../../extensions/include;./../../../extensions/externals/include;./../../../../../../../../../../../../../platforms/android-14/arch-arm/usr/include;./../../../../../../../../../../../../../sources/cxx-stl/gnu-libstdc++/include;./../../../../../../../../../../../../../sources/cxx-stl/gnu-libstdc++/libs/armeabi-v7a/include;./../../../../../../../../../../../../../sources/cxx-stl/gnu-libstdc++/include/backward;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<PreprocessorDefinitions>android;ANDROID;USE_REGAL=1;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<WarningLevel>Level3</WarningLevel>
+			<PrecompiledHeader>NotUsing</PrecompiledHeader>
+			<PrecompiledHeaderFile></PrecompiledHeaderFile>
+		</ClCompile>
+		<Link>
+			<AdditionalOptions> -Wl,--start-group -lc -lm -lgcc -lgnustl_static -lEGL -lGLESv2 -landroid -lm -lsupc++ -lgcc -lRegalW_static -Wl,--end-group</AdditionalOptions>
+			<OutputFile>$(OutDir)libSoftShadows.so</OutputFile>
+			<AdditionalLibraryDirectories>./../../../extensions/externals/lib/Tegra-Android;./../../../extensions/lib/Tegra-Android;./../../../../../../../../../../../../../sources/cxx-stl/gnu-libstdc++/libs/armeabi-v7a;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+			<ProgramDatabaseFile>$(OutDir)/libSoftShadows.so.pdb</ProgramDatabaseFile>
+			<SubSystem>Windows</SubSystem>
+			<ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+		</Link>
+		<AntBuild>
+			<AntBuildPath>$(ProjectDir)./../../SoftShadows</AntBuildPath>
+			<JavaSourceDir>src/../../../extensions/src/NvAppBase/java;src</JavaSourceDir>
+			<AntBuildType>Debug</AntBuildType>
+			<AntLibraryName>$(TargetName)</AntLibraryName>
+		</AntBuild>
+		<ResourceCompile>
+		</ResourceCompile>
+		<ProjectReference>
+			<UseLibraryDependencyInputs>true</UseLibraryDependencyInputs>
+		</ProjectReference>
+	</ItemDefinitionGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|Tegra-Android'">
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|Tegra-Android'">
+	</PropertyGroup>
+	<ItemGroup>
+		<ClCompile Include="..\..\SoftShadows\KnightModel.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\SoftShadows\PodiumModel.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\SoftShadows\RigidMesh.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\SoftShadows\SoftShadows.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\SoftShadows\SoftShadowsRenderer.cpp">
+		</ClCompile>
+		<ClInclude Include="..\..\SoftShadows\DepthPrepassShader.h">
+		</ClInclude>
+		<ClInclude Include="..\..\SoftShadows\EyeShader.h">
+		</ClInclude>
+		<ClInclude Include="..\..\SoftShadows\KnightModel.h">
+		</ClInclude>
+		<ClInclude Include="..\..\SoftShadows\PcssShader.h">
+		</ClInclude>
+		<ClInclude Include="..\..\SoftShadows\PodiumModel.h">
+		</ClInclude>
+		<ClInclude Include="..\..\SoftShadows\RigidMesh.h">
+		</ClInclude>
+		<ClInclude Include="..\..\SoftShadows\SceneShader.h">
+		</ClInclude>
+		<ClInclude Include="..\..\SoftShadows\Shader.h">
+		</ClInclude>
+		<ClInclude Include="..\..\SoftShadows\ShadowMapShader.h">
+		</ClInclude>
+		<ClInclude Include="..\..\SoftShadows\SimpleSceneShader.h">
+		</ClInclude>
+		<ClInclude Include="..\..\SoftShadows\SoftShadows.h">
+		</ClInclude>
+		<ClInclude Include="..\..\SoftShadows\SoftShadowsCommon.h">
+		</ClInclude>
+		<ClInclude Include="..\..\SoftShadows\SoftShadowsRenderer.h">
+		</ClInclude>
+		<ClInclude Include="..\..\SoftShadows\VisTexShader.h">
+		</ClInclude>
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="..\..\SoftShadows\assets\shaders\depthprepass.vert">
+		</None>
+		<None Include="..\..\SoftShadows\assets\shaders\eyerender.vert">
+		</None>
+		<None Include="..\..\SoftShadows\assets\shaders\shadowmap.vert">
+		</None>
+		<None Include="..\..\SoftShadows\assets\shaders\vistex.vert">
+		</None>
+		<None Include="..\..\SoftShadows\assets\shaders\depthprepass.frag">
+		</None>
+		<None Include="..\..\SoftShadows\assets\shaders\pcss.frag">
+		</None>
+		<None Include="..\..\SoftShadows\assets\shaders\shadowmap.frag">
+		</None>
+		<None Include="..\..\SoftShadows\assets\shaders\vistex.frag">
+		</None>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="./../../../extensions/externals/build/vs2010android/Half.vcxproj">
+			<ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="./../../../extensions/build/vs2010android/NvAppBase.vcxproj">
+			<ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="./../../../extensions/build/vs2010android/NvAssetLoader.vcxproj">
+			<ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="./../../../extensions/build/vs2010android/NvEGLUtil.vcxproj">
+			<ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="./../../../extensions/build/vs2010android/NvGamepad.vcxproj">
+			<ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="./../../../extensions/build/vs2010android/NvGLUtils.vcxproj">
+			<ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="./../../../extensions/build/vs2010android/NvModel.vcxproj">
+			<ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="./../../../extensions/build/vs2010android/NvUI.vcxproj">
+			<ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+		</ProjectReference>
+	</ItemGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+	<ImportGroup Label="ExtensionTargets"></ImportGroup>
+</Project>

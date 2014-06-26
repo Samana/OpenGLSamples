@@ -1,0 +1,95 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FeedbackParticlesApp", "FeedbackParticlesApp.vcxproj", "{CDC2DE0F-5950-E400-42AC-1F79E1167762}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7B07CE8A-8BF4-4ED2-20C2-4BE4ECA230EC} = {7B07CE8A-8BF4-4ED2-20C2-4BE4ECA230EC}
+		{60297368-F210-EA05-B340-1AD0378699C0} = {60297368-F210-EA05-B340-1AD0378699C0}
+		{1B5408AA-2438-9EB8-3B21-BE348ED0342F} = {1B5408AA-2438-9EB8-3B21-BE348ED0342F}
+		{73279F07-814F-2BC7-CFE2-7DF22495D16F} = {73279F07-814F-2BC7-CFE2-7DF22495D16F}
+		{6826558F-978C-CDA1-5590-D03D58753020} = {6826558F-978C-CDA1-5590-D03D58753020}
+		{B5177C03-F4A3-541C-CDD0-EE298FE4BEB4} = {B5177C03-F4A3-541C-CDD0-EE298FE4BEB4}
+		{6209A624-5FFC-9522-7DA2-92D490A26B6C} = {6209A624-5FFC-9522-7DA2-92D490A26B6C}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NvAppBase", "./../../../extensions/build/vs2010win32/NvAppBase.vcxproj", "{60297368-F210-EA05-B340-1AD0378699C0}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NvModel", "./../../../extensions/build/vs2010win32/NvModel.vcxproj", "{B5177C03-F4A3-541C-CDD0-EE298FE4BEB4}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NvGLUtils", "./../../../extensions/build/vs2010win32/NvGLUtils.vcxproj", "{6826558F-978C-CDA1-5590-D03D58753020}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NvGamepad", "./../../../extensions/build/vs2010win32/NvGamepad.vcxproj", "{73279F07-814F-2BC7-CFE2-7DF22495D16F}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NvAssetLoader", "./../../../extensions/build/vs2010win32/NvAssetLoader.vcxproj", "{1B5408AA-2438-9EB8-3B21-BE348ED0342F}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NvUI", "./../../../extensions/build/vs2010win32/NvUI.vcxproj", "{6209A624-5FFC-9522-7DA2-92D490A26B6C}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Half", "./../../../extensions/externals/build/vs2010win32/Half.vcxproj", "{7B07CE8A-8BF4-4ED2-20C2-4BE4ECA230EC}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "R3", "./../../../extensions/externals/build/vs2010win32/R3.vcxproj", "{85031F51-83B4-4E87-1838-19F39C385DF8}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		debug|Win32 = debug|Win32
+		release|Win32 = release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CDC2DE0F-5950-E400-42AC-1F79E1167762}.debug|Win32.ActiveCfg = debug|Win32
+		{CDC2DE0F-5950-E400-42AC-1F79E1167762}.debug|Win32.Build.0 = debug|Win32
+		{CDC2DE0F-5950-E400-42AC-1F79E1167762}.release|Win32.ActiveCfg = release|Win32
+		{CDC2DE0F-5950-E400-42AC-1F79E1167762}.release|Win32.Build.0 = release|Win32
+		{60297368-F210-EA05-B340-1AD0378699C0}.debug|Win32.ActiveCfg = debug|Win32
+		{60297368-F210-EA05-B340-1AD0378699C0}.debug|Win32.Build.0 = debug|Win32
+		{60297368-F210-EA05-B340-1AD0378699C0}.release|Win32.ActiveCfg = release|Win32
+		{60297368-F210-EA05-B340-1AD0378699C0}.release|Win32.Build.0 = release|Win32
+		{B5177C03-F4A3-541C-CDD0-EE298FE4BEB4}.debug|Win32.ActiveCfg = debug|Win32
+		{B5177C03-F4A3-541C-CDD0-EE298FE4BEB4}.debug|Win32.Build.0 = debug|Win32
+		{B5177C03-F4A3-541C-CDD0-EE298FE4BEB4}.release|Win32.ActiveCfg = release|Win32
+		{B5177C03-F4A3-541C-CDD0-EE298FE4BEB4}.release|Win32.Build.0 = release|Win32
+		{6826558F-978C-CDA1-5590-D03D58753020}.debug|Win32.ActiveCfg = debug|Win32
+		{6826558F-978C-CDA1-5590-D03D58753020}.debug|Win32.Build.0 = debug|Win32
+		{6826558F-978C-CDA1-5590-D03D58753020}.release|Win32.ActiveCfg = release|Win32
+		{6826558F-978C-CDA1-5590-D03D58753020}.release|Win32.Build.0 = release|Win32
+		{73279F07-814F-2BC7-CFE2-7DF22495D16F}.debug|Win32.ActiveCfg = debug|Win32
+		{73279F07-814F-2BC7-CFE2-7DF22495D16F}.debug|Win32.Build.0 = debug|Win32
+		{73279F07-814F-2BC7-CFE2-7DF22495D16F}.release|Win32.ActiveCfg = release|Win32
+		{73279F07-814F-2BC7-CFE2-7DF22495D16F}.release|Win32.Build.0 = release|Win32
+		{1B5408AA-2438-9EB8-3B21-BE348ED0342F}.debug|Win32.ActiveCfg = debug|Win32
+		{1B5408AA-2438-9EB8-3B21-BE348ED0342F}.debug|Win32.Build.0 = debug|Win32
+		{1B5408AA-2438-9EB8-3B21-BE348ED0342F}.release|Win32.ActiveCfg = release|Win32
+		{1B5408AA-2438-9EB8-3B21-BE348ED0342F}.release|Win32.Build.0 = release|Win32
+		{6209A624-5FFC-9522-7DA2-92D490A26B6C}.debug|Win32.ActiveCfg = debug|Win32
+		{6209A624-5FFC-9522-7DA2-92D490A26B6C}.debug|Win32.Build.0 = debug|Win32
+		{6209A624-5FFC-9522-7DA2-92D490A26B6C}.release|Win32.ActiveCfg = release|Win32
+		{6209A624-5FFC-9522-7DA2-92D490A26B6C}.release|Win32.Build.0 = release|Win32
+		{7B07CE8A-8BF4-4ED2-20C2-4BE4ECA230EC}.debug|Win32.ActiveCfg = debug|Win32
+		{7B07CE8A-8BF4-4ED2-20C2-4BE4ECA230EC}.debug|Win32.Build.0 = debug|Win32
+		{7B07CE8A-8BF4-4ED2-20C2-4BE4ECA230EC}.release|Win32.ActiveCfg = release|Win32
+		{7B07CE8A-8BF4-4ED2-20C2-4BE4ECA230EC}.release|Win32.Build.0 = release|Win32
+		{85031F51-83B4-4E87-1838-19F39C385DF8}.debug|Win32.ActiveCfg = debug|Win32
+		{85031F51-83B4-4E87-1838-19F39C385DF8}.debug|Win32.Build.0 = debug|Win32
+		{85031F51-83B4-4E87-1838-19F39C385DF8}.release|Win32.ActiveCfg = release|Win32
+		{85031F51-83B4-4E87-1838-19F39C385DF8}.release|Win32.Build.0 = release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddins) = postSolution
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+	EndGlobalSection
+EndGlobal

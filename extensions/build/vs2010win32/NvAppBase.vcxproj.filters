@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<Filter Include="src"><!--  -->
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="..\..\src\NvAppBase\EngineAndroid.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\NvAppBase\InputCallbacksGLFW.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\NvAppBase\MainAndroid.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\NvAppBase\MainLinux.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\NvAppBase\MainMacOSX.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\NvAppBase\MainWin32.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\NvAppBase\NvAppBase.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\NvAppBase\NvFramerateCounter.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\NvAppBase\NvInputTransformer.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\NvAppBase\NvLogs.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\NvAppBase\NvSampleApp.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\src\NvAppBase\NvAndroidNativeAppGlue.c">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClInclude Include="..\..\src\NvAppBase\EngineAndroid.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\src\NvAppBase\NvAndroidNativeAppGlue.h">
+			<Filter>src</Filter>
+		</ClInclude>
+	</ItemGroup>
+	<ItemGroup>
+		<Filter Include="include"><!--  -->
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClInclude Include="..\..\include\NvAppBase\NvAppBase.h">
+			<Filter>include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\include\NvAppBase\NvFramerateCounter.h">
+			<Filter>include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\include\NvAppBase\NvGLAppContext.h">
+			<Filter>include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\include\NvAppBase\NvInputTransformer.h">
+			<Filter>include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\include\NvAppBase\NvKeyboard.h">
+			<Filter>include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\include\NvAppBase\NvPlatformContext.h">
+			<Filter>include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\include\NvAppBase\NvSampleApp.h">
+			<Filter>include</Filter>
+		</ClInclude>
+	</ItemGroup>
+</Project>

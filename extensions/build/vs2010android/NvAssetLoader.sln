@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NvAssetLoader", "NvAssetLoader.vcxproj", "{1B5408AA-2438-9EB8-3B21-BE348ED0342F}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		debug|Tegra-Android = debug|Tegra-Android
+		release|Tegra-Android = release|Tegra-Android
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B5408AA-2438-9EB8-3B21-BE348ED0342F}.debug|Tegra-Android.ActiveCfg = debug|Tegra-Android
+		{1B5408AA-2438-9EB8-3B21-BE348ED0342F}.debug|Tegra-Android.Build.0 = debug|Tegra-Android
+		{1B5408AA-2438-9EB8-3B21-BE348ED0342F}.release|Tegra-Android.ActiveCfg = release|Tegra-Android
+		{1B5408AA-2438-9EB8-3B21-BE348ED0342F}.release|Tegra-Android.Build.0 = release|Tegra-Android
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddins) = postSolution
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+	EndGlobalSection
+EndGlobal

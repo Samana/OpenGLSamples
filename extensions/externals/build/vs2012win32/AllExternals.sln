@@ -1,0 +1,32 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 11
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Half", "./Half.vcxproj", "{7B07CE8A-8BF4-4ED2-20C2-4BE4ECA230EC}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "R3", "./R3.vcxproj", "{85031F51-83B4-4E87-1838-19F39C385DF8}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		debug|Win32 = debug|Win32
+		release|Win32 = release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7B07CE8A-8BF4-4ED2-20C2-4BE4ECA230EC}.debug|Win32.ActiveCfg = debug|Win32
+		{7B07CE8A-8BF4-4ED2-20C2-4BE4ECA230EC}.debug|Win32.Build.0 = debug|Win32
+		{7B07CE8A-8BF4-4ED2-20C2-4BE4ECA230EC}.release|Win32.ActiveCfg = release|Win32
+		{7B07CE8A-8BF4-4ED2-20C2-4BE4ECA230EC}.release|Win32.Build.0 = release|Win32
+		{85031F51-83B4-4E87-1838-19F39C385DF8}.debug|Win32.ActiveCfg = debug|Win32
+		{85031F51-83B4-4E87-1838-19F39C385DF8}.debug|Win32.Build.0 = debug|Win32
+		{85031F51-83B4-4E87-1838-19F39C385DF8}.release|Win32.ActiveCfg = release|Win32
+		{85031F51-83B4-4E87-1838-19F39C385DF8}.release|Win32.Build.0 = release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddins) = postSolution
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+	EndGlobalSection
+EndGlobal
