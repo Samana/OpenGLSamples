@@ -15,8 +15,8 @@ What to Read Next:
 ** Details the per-platform requirements for developing with the samples.
 * [Setup Guide](http://docs.nvidia.com/gameworks/index.html#gameworkslibrary/graphicssamples/opengl_samples/gl_setup.htm)
 ** Details the per-platform steps needed to set up your PC for building and running the OpenGL samples.
-* [Overview of OpenGL Samples](http://docs.nvidia.com/gameworks/index.html#gameworkslibrary/graphicssamples/opengl_samples/gl_samples.htm)
+* [Overview of OpenGL Samples](http://docs.nvidia.com/gameworks/index.html#gameworkslibrary/graphicssamples/opengl_samples/gl-samples.htm)
 ** Describes each of the samples in the pack, what they demonstrate, and in some cases further detailed analysis of how they work.
-* [Overview of App Framework and Libraries](http://docs.nvidia.com/gameworks/index.html#gameworkslibrary/graphicssamples/opengl_samples/gl_framework.htm)
+* [Overview of App Framework and Libraries](http://docs.nvidia.com/gameworks/index.html#gameworkslibrary/graphicssamples/opengl_samples/index-framework.htm)
 ** Details the cross-platform application framework and other support libraries, along with links to class/structure documentation.
 
